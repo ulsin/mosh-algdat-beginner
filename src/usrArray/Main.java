@@ -8,5 +8,8 @@ public class Main {
         uArr.insert(0);
         uArr.insert(7);
         uArr.print();
+
+        System.out.println(uArr.indexOf(7));
+        System.out.println(uArr.indexOf(3));
     }
 }
