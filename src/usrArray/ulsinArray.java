@@ -22,12 +22,10 @@ public class ulsinArray {
     }
 
     public void removeAt(int index) {
-        // Search for index
-        // Make new array with every element except for the index
         int[] tempArr = new int[intArr.length - 1];
         int tempCounter = 0;
-        for (int i = 0; i < counter; i++) {
-            if (i != index) {
+        for (int i = 0; i < counter; i++) { // Search for index
+            if (i != index) { // Make new array with every element except for the index
                 tempArr[tempCounter] = intArr[i];
                 tempCounter++;
             }

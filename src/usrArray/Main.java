@@ -2,7 +2,6 @@ package usrArray;
 
 public class Main {
     public static void main(String[] args) {
-        //TODO make remove function
         ulsinArray uArr = new ulsinArray(5);
         uArr.insert(3);
         uArr.insert(5);
