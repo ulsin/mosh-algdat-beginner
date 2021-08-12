@@ -42,16 +42,14 @@ public class ulsinArray {
             }
         }
         intArr = tempArr;
-        counter = counter - 1;
+        counter--;
     }
 
     public int indexOf(int number) {
-        int indexCounter = 0;
         for (int i = 0; i < counter; i++) {
             if (number == intArr[i]) {
-                return indexCounter;
+                return i;
             }
-            indexCounter++;
         }
         return -1; // returns -1 if the number is never found.
     }
