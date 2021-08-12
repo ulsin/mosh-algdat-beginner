@@ -7,5 +7,13 @@ public class Main {
         uLiList.addFirst(20);
         uLiList.addFirst(30);
         uLiList.print();
+
+        //TODO
+        // - addLast
+        // - deleteFirst
+        // - deleteLast
+        // - countains
+        // - indexOf
+
     }
 }
