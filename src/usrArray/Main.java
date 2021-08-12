@@ -8,6 +8,7 @@ public class Main {
         uArr.insert(5);
         uArr.insert(0);
         uArr.insert(7);
+        uArr.insert(12);
 
         System.out.println("Printing the array after inserting 3 5 0 7");
         uArr.print();

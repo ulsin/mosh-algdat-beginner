@@ -30,6 +30,10 @@ public class ulsinArray {
     }
 
     public void removeAt(int index) {
+        if (index < 0 || index > intArr.length - 1) {
+            throw new IllegalArgumentException();
+        }
+
         int[] tempArr = new int[intArr.length - 1];
         int tempCounter = 0;
         for (int i = 0; i < counter; i++) { // Search for index
