@@ -10,13 +10,14 @@ public class Main {
 
         uLiList.addLast(50);
         uLiList.addLast(60);
+        // appends two nunbers and makes the list { 30, 20, 10, 50, 60 }
+
         uLiList.print();
 
         //TODO
-        // - addLast
         // - deleteFirst
         // - deleteLast
-        // - countains
+        // - contains
         // - indexOf
 
     }

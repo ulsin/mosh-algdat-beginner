@@ -1,7 +1,6 @@
 package usrLinkedList;
 
 public class ulsinLinkedList<T> {
-    //TODO get it done
     private uNode<T> first;
     private uNode<T> last;
 
