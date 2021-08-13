@@ -12,18 +12,32 @@ public class ulsinLinkedList<T> {
     }
 
     public void addFirst(T innData) {
-        uNode<T> tempNode = new uNode<>();
-        tempNode.data = innData;
-        tempNode.next = first; // tempnode now points to the adress of the first
-        first = tempNode; // first now points to adress of tempnode
+        if (first.data == null) {
+            first.data = innData;
+        } else {
+            uNode<T> newFirst = new uNode<>();
+            newFirst.data = innData;
+            newFirst.next = first;
+            first = newFirst;
+        }
+    }
+
+    public void addLast(T innData) {
+        if (first.data == null) {
+            first.data = innData;
+        } else {
+            last.data = innData;
+            last.next = new uNode<>();
+            last = last.next;
+        }
     }
 
     public void print() {
         uNode<T> tempNode = first;
-        while (tempNode.next != null) {
+        do {
             System.out.println(tempNode.data);
             tempNode = tempNode.next; // tempnode now points to the next node in the chain
-        }
+        } while (tempNode.next != null);
 
     }
 
